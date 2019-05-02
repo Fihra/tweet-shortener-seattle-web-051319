@@ -32,6 +32,7 @@ def bulk_tweet_shortener(tweets)
 end
 
 def selective_tweet_shortener(tweet)
+<<<<<<< HEAD
     if tweet.length > 140
       word_substituter(tweet)
     else
@@ -46,4 +47,13 @@ def shortened_tweet_truncator(tweet)
   else
     tweet
   end
+=======
+  #weet.split(" ").collect do |sentence|
+    if tweet.length > 140
+      word_substituter(tweet)
+    elsif #sentence.length <= 130
+      tweet
+    end
+  #end
+>>>>>>> cf1285e4129726cf8b05c9e1893a54ae0e04263a
 end
